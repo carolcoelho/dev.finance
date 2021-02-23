@@ -140,7 +140,6 @@ const Utils = {
         value = Number(value) * 100
 
         return value
-
     },
 
     formatDate(date) {
@@ -269,16 +268,12 @@ const App = {
         DOM.updateBalance()
 
         Storage.set(Transaction.all)
-
-
     },
-
     reload() {
         DOM.clearTransaction()
         App.init()
     },
 }
-
 
 App.init()
 
